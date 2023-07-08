@@ -17,9 +17,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
 <body>
     <header class="header">
         <div class="container">
-            <a  id="go to top"   class="link header-logo" href="./index.html"><img src="./images/logo.svg" alt="logo image"></a> 
-            <nav class="header-nav">   
-        <ul class="list header-list">
+            
+      <nav class="header-nav  nav-flexbox">   
+                <a  id="go to top"   class="link header-logo" href="./index.html">
+                <img src="./images/logo.svg" alt="logo image"></a> 
+        <ul class="list header-list nav-flexbox">
           <li class="header-list-item">
               <a class="link header-list-link" href=""> About Us</a></li>
           <li class="header-list-item">
@@ -30,26 +32,32 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
               <a class="link header-list-link" href="">Blog</a></li>
           <li class="header-list-item">
               <a class="link header-list-link" href="">Contacts</a></li>
-      </ul>
-      <a  href="" class="link header-link">Get consultation</a>
-      <button class="button header-btn" type="button">Log in / Register</button>
-  </nav>
+        </ul>    
+        <ul class="list-btn list">
+        <li class="item-btn-list">
+            <button  type="button" class="button consalt-btn">Get consultation</button></li>
+        <li class="item-btn-list">
+            <button class="button header-btn" type="button">Log in / Register</button></li>
+        </ul>
+      </nav>
         </div>
-
     </header>
 
     <main>
         <section class="hero">
             <div class="container">
-                <button class="button hero-btn">Play showreel</button>
-                <h1 class="hero-title">Enjoy studying <br> with Createx <br> Online Courses</h1>
-                <div>
-                    <a class="link typeone-link hero-link-about"  href="" target="_blank" rel="noopener noreferrer">About us</a>
-                    <a class="link hero-link-courses"  href="" target="_blank" rel="noopener noreferrer">Explore courses</a>
+                <div class="box">
+                    <div>               
+                        <button type="button" class="button hero-btn">Play showreel</button>
+                       <h1 class="hero-title">Enjoy studying <br> with Createx <br> Online Courses</h1>
+                       <div>
+                           <a class="link typeone-link hero-link-about"  href="" target="_blank" rel="noopener noreferrer">About us</a>
+                           <a class="link hero-link-courses"  href="" target="_blank" rel="noopener noreferrer">Explore courses</a>
+                       </div></div>
+   
+                   <img class="hero-img" src="./images/illustration.svg" alt="" width="603">
                 </div>
-            
-                
-                <img class="hero-img" src="./images/illustration.svg" alt="" width="603">
+
             
                 <ul class="list hero-list">
                 <li class="hero-item">
@@ -70,31 +78,34 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
         </section>
 
 <section class="whycreatex-section">
-    <div class="container">
-        <img src="./images/image.jpg" alt="woman is working on laptop" width="705" >
-        <p class="section-pre-title">Who we are</p>
-        <h2 class="section--title whycreatex-position">Why Createx?</h2>
-        <ul class="list whycreatex-list">
-            <li class="whycreatex-item">
-            </li>
-            <p class="whycreatex-text"> A fermentum in morbi pretium aliquam adipiscing donec tempus.</p>
-            <li class="whycreatex-item">
-            </li>
-            <p class="whycreatex-text">Vulputate placerat amet pulvinar lorem nisl.</p>
-            <li class="whycreatex-item">
-            </li>
-            <p class="whycreatex-text">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</p>
-            <li class="whycreatex-item">
-                <p class="whycreatex-text">Etiam duis lobortis in fames ultrices commodo nibh.</p>
-            </li>
-            <li class="whycreatex-item">
-                <p class="whycreatex-text">Tincidunt sagittis neque sem ac eget./p>
-            </li>
-            <li class="whycreatex-item">
-                <p class="whycreatex-text">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</p>
-            </li>
-        </ul>
-        <a class="link whycreatex-link"  href="">More about us</a>
+    <div class="container box">
+        <img class="whycreatex-img" src="./images/image.jpg" alt="woman is working on laptop" width="705" >
+        <div class="whycreatex-block">  
+                  <p class="section-pre-title">Who we are</p>
+            <h2 class="section--title whycreatex-position">Why Createx?</h2>
+            <ul class="list whycreatex-list">
+                <li class="whycreatex-item">
+                </li>
+                <p class="whycreatex-text"> A fermentum in morbi pretium aliquam adipiscing donec tempus.</p>
+                <li class="whycreatex-item">
+                </li>
+                <p class="whycreatex-text">Vulputate placerat amet pulvinar lorem nisl.</p>
+                <li class="whycreatex-item">
+                </li>
+                <p class="whycreatex-text">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</p>
+                <li class="whycreatex-item">
+                    <p class="whycreatex-text">Etiam duis lobortis in fames ultrices commodo nibh.</p>
+                </li>
+                <li class="whycreatex-item">
+                    <p class="whycreatex-text">Tincidunt sagittis neque sem ac eget./p>
+                </li>
+                <li class="whycreatex-item">
+                    <p class="whycreatex-text">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</p>
+                </li>
+            </ul>
+            <a class="link whycreatex-link"  href="">More about us</a>
+        </div>
+
     </div>
 
    
@@ -102,46 +113,73 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
 
 <section class="feature-section">
     <div class="container">
-        <p class="section-pre-title">Ready to learn?</p>
-        <h2 class="section--title feature-position ">Featured Courses</h2>
-    
-    <a class="link typeone-link feature-link"  href="" target="_blank" rel="noopener noreferrer">View all courses</a>
+        <div class="box">
+            <div>
+                <p class="section-pre-title">Ready to learn?</p>
+                <h2 class="section--title feature-position ">Featured Courses</h2>
+            </div>
+           <a class="link typeone-link feature-link"  href="" target="_blank" rel="noopener noreferrer">View all courses</a>
+        </div>
+
     <ul class="list feature-list">
-        <li class="feature-item">
+        <li class="feature-item box">
             <img class="feature-img" src="./images/avatar1.jpg" alt="photo of lecturer" width="214">
-            <span class="feature-subtitle bgn-green">Marketing</span><h2 class="feature-item-title">The Ultimate Google Ads Training Course</h2>
-        <p class="feature-text"><span class="feature-text-accent">$100</span> 
-            by Jerome Bell</p>
+            <div class="profile-box">
+                <span class="feature-subtitle bgn-green">Marketing</span><h2 class="feature-item-title">The Ultimate Google Ads Training Course</h2>
+                <p class="feature-text"><span class="feature-text-accent">$100</span> 
+                    by Jerome Bell</p>
+            </div>
+     
         </li>
-        <li class="feature-item">
+        <li class="feature-item box">
             <img class="feature-img" src="./images/avatar2.jpg" alt="photo of lecturer" width="214">
-            <span class="feature-subtitle bgn-blue ">Management</span><h2 class="feature-item-title">Prduct Management Fundamentals</h2>
-        <p class="feature-text"><span class="feature-text-accent">$480</span> 
-            by Marvin McKinney</p>
+            <div class="profile-box">
+                
+                <span class="feature-subtitle bgn-blue ">Management</span><h2 class="feature-item-title">Prduct Management Fundamentals</h2>
+            <p class="feature-text"><span class="feature-text-accent">$480</span> 
+                by Marvin McKinney</p>
+            </div>
+
         </li>
-        <li class="feature-item">
+        <li class="feature-item box">
             <img class="feature-img" src="./images/avatar3.jpg" alt="photo of lecturer" width="214">
-            <span class="feature-subtitle bgn-orange">HR & Recruting</span><h2 class="feature-item-title">HR  Management and Analytics</h2>
-        <p class="feature-text"><span class="feature-text-accent">$200</span> 
-            by Leslie Alexander Li</p>
+            <div class="profile-box">
+               
+                <span class="feature-subtitle bgn-orange">HR & Recruting</span><h2 class="feature-item-title">HR  Management and Analytics</h2>
+            <p class="feature-text"><span class="feature-text-accent">$200</span> 
+                by Leslie Alexander Li</p>
+            </div>
+
         </li>
-        <li class="feature-item">
+        <li class="feature-item box">
             <img class="feature-img" src="./images/avatar4.jpg" alt="photo of lecturer" width="214">
-            <span class="feature-subtitle bgn-green">Marketing</span><h2 class="feature-item-title">Brand Management & PR Communications</h2>
-        <p class="feature-text"><span class="feature-text-accent">$530</span> 
-            by Kristin Watson</p>
+            <div class="profile-box">
+                
+                <span class="feature-subtitle bgn-green">Marketing</span><h2 class="feature-item-title">Brand Management & PR Communications</h2>
+            <p class="feature-text"><span class="feature-text-accent">$530</span> 
+                by Kristin Watson</p>
+            </div>
+
         </li>
-        <li class="feature-item">
+        <li class="feature-item box">
             <img class="feature-img" src="./images/avatar5.jpg" alt="photo of lecturer" width="214">
-            <span class="feature-subtitle bgn-blue">Management</span><h2 class="feature-item-title">Business Development Management</h2>
-        <p class="feature-text"><span class="feature-text-accent">$400</span> 
-            by Dianne Russell</p>
+            <div class="profile-box">
+                
+                <span class="feature-subtitle bgn-blue">Management</span><h2 class="feature-item-title">Business Development Management</h2>
+            <p class="feature-text"><span class="feature-text-accent">$400</span> 
+                by Dianne Russell</p>
+            </div>
+
         </li>
-        <li class="feature-item">
+        <li class="feature-item box">
             <img class="feature-img" src="./images/avatar6.jpg" alt="photo of lecturer" width="214">
-            <span class="feature-subtitle bgn-red">Design</span><h2 class="feature-item-title">Graphic Design Basic</h2>
-        <p class="feature-text"><span class="feature-text-accent">$500</span> 
-            by Guy Hawkins</p>
+            <div class="profile-box">
+              
+                <span class="feature-subtitle bgn-red">Design</span><h2 class="feature-item-title">Graphic Design Basic</h2>
+            <p class="feature-text"><span class="feature-text-accent">$500</span> 
+                by Guy Hawkins</p>
+            </div>
+
         </li>
     </ul>
     </div>
