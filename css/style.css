@@ -166,8 +166,14 @@ line-height: 3.25;
 }
                               /* HERO */
 .hero {
-  margin-bottom: 180px;
-  background-color: var(--secondary-bgn-color);
+  padding-top: 200px;
+  padding-bottom: 80px;
+  /* margin-bottom: 180px; */
+  /* background-color: var(--secondary-bgn-color); */
+  background-image: url(../images/bgn-hero.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
 }
 
 .hero-btn {
@@ -182,6 +188,9 @@ line-height: 1.5;
 }
 .hero-btn-svg {
   margin-right: 16px;
+}
+.hero-title-box{
+  margin-bottom: 259px;
 }
 .hero-title {
 margin-bottom: 60px;
@@ -221,7 +230,7 @@ letter-spacing: 0.5px;
 
 .hero-img {
   margin-left: auto;
-  margin-top: 128px;
+  margin-top: auto;
   margin-bottom: 189px;
 
 }
@@ -264,7 +273,12 @@ line-height: 1.6;
                           /* WHY CREATEX */
 
 .whycreatex-section {
-  margin-bottom: 180px;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-image: url(../images/bgn-whycreatex.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
 }
 
 .whycreatex-position{
@@ -289,6 +303,9 @@ line-height: 1.6;
 
 .whycreatex-svg {
   margin-right: 16px;
+  position: relative;
+  top: 5px;
+
 }
 .whycreatex-text {
 width: 358px;
@@ -316,7 +333,7 @@ letter-spacing: 0.5px;
                                                                 /* FEATURED COURSES */
                                                                 
 .feature-section {
-  margin-bottom: 180px;
+  padding-bottom: 180px;
 }
 .feature-position {
   margin-bottom: 60px;
@@ -410,7 +427,7 @@ line-height: 1.5;
 }                                                           
                                        /*BENEFITS */
 .benefits-section {
-  margin-bottom: 140.14px;
+  /* margin-bottom: 140.14px; */
 }                          
 .benefits-position-pretitle {
   text-align: center;
@@ -473,17 +490,21 @@ line-height: 1.6;
                                                                    
 
 .events-section {
-  background-color: var(--secondary-bgn-color);
-  margin-bottom: 120px;
+  /* background-color: var(--secondary-bgn-color); */
+  /* margin-bottom: 120px; */
+  padding-top: 213px;
+  padding-bottom: 80px;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
 }
 
 .events-pretitle-position {
-  padding-top: 80px;
   text-align: center;
-  
 }
 .events-position {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   text-align: center;
 }
 .events-list {
@@ -591,6 +612,7 @@ letter-spacing: 0.5px;
 }
                                             /* CERTIFICATE */
 .cert-section {
+  padding-top: 120px;
 }
 
 .cert-position {
@@ -621,7 +643,11 @@ line-height: 1.6;
   padding-top: 166px;
   padding-bottom: 160px;
 
-  background-color: var(--gray-bgn-color);
+  /* background-color: var(--gray-bgn-color); */
+  background-image: url(../images/bgn-team.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
 }
 .section-pre-title.padding {
   
@@ -655,7 +681,7 @@ line-height: 1.6;
 }
 
 .team-btn-svg:hover {
-  fill:var(--white-text-color);
+  fill:var(--accent-color);
 }
 .team-btn-svg {
   fill:currentColor
@@ -774,7 +800,8 @@ line-height: 1.5;
                                          /* BLOG */
  .blog-section {
   padding-top: 120px;
-margin-bottom: 180px;}                                                                         
+  padding-bottom: 180px;
+}                                                                         
                             
   .blog-position {
   }
@@ -807,6 +834,7 @@ padding: 0 40px;
 .blog-item-img {
   margin-bottom: 16px;
 }
+
 .blog-link-podcast {
 }
 .blog-link-video {
@@ -814,7 +842,15 @@ padding: 0 40px;
 .blog-link-article {
 }
 
-
+.blog-item-divider {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.blog-item-calendar {
+  margin-right: 8px;
+  position: relative;
+  top:1.5px
+}
 .blog-item-date {
  margin-bottom: 8px;
 
@@ -830,12 +866,12 @@ line-height: 1.5;
 .blog-item-title {
 margin-bottom: 8px;
 
-  color: var(--title-text-color);
-
+color: var(--title-text-color);
 font-size: 20px;
 font-weight: 700;
 line-height: 1.5;
 }
+
 .blog-item-text {
 margin-bottom: 16px;
 
@@ -850,10 +886,17 @@ line-height: 1.6;
 font-weight: 700;
 line-height: 1.6;
 }
+.blog-link-svg {
+  margin-left: 8px;
+  position: relative;
+  top: 5px;
+  fill:var(--accent-color);
+}
                            /* SUBSCRIBE */
   .subscribe-section{
 display: flex;
 align-items: flex-end;
+padding-top: 120px;
 background-color: var(--secondary-bgn-color);
   }              
 
@@ -862,7 +905,7 @@ background-color: var(--secondary-bgn-color);
     text-align: center;
   }
   .subscribe-pretitle-position {
-    padding-top: 120px;
+   
     text-align: center;
   }                         
   
@@ -920,12 +963,10 @@ background-color: var(--footer-bgn-color);
 .footer-block-logo {
   margin-right: 80px;
 }
-.footer-logo {
-  
-}
-.footer-logo-img {
+.footer-logo-svg {
   margin-bottom: 24px;
 }
+
 .footer-text{
 margin-bottom: 38px;
 max-width: 279px;
@@ -944,7 +985,13 @@ max-width: 279px;
 .footer-item:not(:last-child) {
   margin-right: 20px;
 }
-.footer-link {
+
+
+.social-link-svg:hover {
+  fill:var(--white-text-color);
+}
+.social-link-svg {
+fill: currentColor;
 }
 .footer-link-img {
 }
@@ -975,7 +1022,7 @@ text-transform: uppercase;
   margin-bottom: 8px;
 }
 .footer-block-contact {
-  margin-right: 80px;
+  margin-right: 75px;
 }
 .footer-nav {
   font-style: inherit;
@@ -988,6 +1035,16 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.6;
 }
+
+.svg-address {
+  fill:var(--white-text-color);
+  opacity: 0.6000000238418579;
+}
+.svg-address {
+  margin-right: 8px;
+  fill:currentColor;
+}
+
 
 .footer-subtitle-link:not(:last-child) {
   margin-bottom: 8px;
@@ -1057,6 +1114,10 @@ padding: 20px 0;
 font-size: 12px;
 font-weight: 400;
 line-height: 1.5;
+}
+.svg-heart{
+  margin-right: 4px;
+  margin-left: 4px;
 }
 .footer-textend-box{
   display: flex;
