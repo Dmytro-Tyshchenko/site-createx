@@ -1011,12 +1011,13 @@ max-width: 279px;
 
 
 .social-link-svg:hover {
-  fill:var(--white-text-color);
+  opacity: 1;
 }
 .social-link-svg {
-fill: currentColor;
+fill: white;
+opacity: 0.6000000238418579;
 }
-
+ddd
 .footer-block-sitemap {
   margin-right: 79px;
 }
