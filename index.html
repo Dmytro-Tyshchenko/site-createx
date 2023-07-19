@@ -43,7 +43,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
             <svg class="item-btn-svg" width="20" height="20">
                 <use href="./images/sprite.svg#icon-Profile"></use>
             </svg>
-            <button class="button header-btn" type="button">Log in / Register</button></li>
+            <button data-modal-open class="button header-btn" type="button" >Log in / Register</button></li>
         </ul>
       </nav>
         </div>
@@ -418,7 +418,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
     <ul class="list team-list">
         <li class="team-item">
             <div
-            class="backdrop">
+            class="overlay-profile">
             <img class="team-img" src="./images/img-team1.jpg" alt="photo of team mamber" width="285">
             <div class="link-flexbox">
                 <a class="link team-item-link"  
@@ -447,7 +447,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
             <h3 class="team-item-pretitle">Founder and CEO</h3>
         </li>
         <li class="team-item">
-            <div class="backdrop">
+            <div class="overlay-profile">
                 <img class="team-img" src="./images/img-team2.jpg" alt="photo of team mamber" width="285">
                 <div class="link-flexbox">
                     <a class="link team-item-link"  
@@ -476,7 +476,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
             <h3 class="team-item-pretitle">Founder and Program Director</h3>
         </li>
         <li class="team-item">
-            <div class="backdrop">
+            <div class="overlay-profile">
                 <img class="team-img" src="./images/img-team3.jpg" alt="photo of team mamber" width="285"> 
                 <div class="link-flexbox">
                     <a class="link team-item-link"  
@@ -505,7 +505,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
             <h3 class="team-item-pretitle">Marketer, Curator of Marketing Course</h3>
         </li>
         <li class="team-item">
-            <div class="backdrop">
+            <div class="overlay-profile">
                 <img class="team-img" src="./images/img-team4.jpg" alt="photo of team mamber" width="285"> 
                 <div class="link-flexbox">
                     <a class="link team-item-link"  
@@ -861,6 +861,58 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
 
 </div>
 </footer>
+                    <!-- MODAL -->
+  <div data-modal class="backdrop is-hidden" >
+    <div class="modal">
+<fieldset class="fieldset-box">
+    <legend class="modal-title">
+        Sign in
+    </legend>
+    <button data-modal-close class="btn-cross" type="button" >
+        <svg class="svg-cross" width="24" height="24">
+        <use href="./images/sprite.svg#icon-Cross"></use>
+    </svg></button>
+    <p class="modal-upper-text">Sign in to your account using email and
+         password provided <br> during registration.</p>
+    <form class="form-flexbox">
+        <label for="mail" class="label-title">Email</label>
+        <input type="email" class="input-position" id="mail" placeholder="Your working email" name="mail">
+        <label for="password" class="label-title">Password</label>
+        <input type="password" class="input-position" id="password" name="psd">
+        <div class="form-block">
+            <label class="label-checkbox">
+                <input class="input-checkbox" type="checkbox"  name="sign-in" value="agree" checked>
+                Keep me signed in</label>
+            <a class="link-help link" href="">Forgot password?</a>
+        </div>
+
+        <button class="btn-submit" type="submit"> Sign in</button>
+        <p class="modal-lower-text">Don't have an account? <a class="link-signup link" href="">Sign up</a></p>
+    </form>
+</fieldset>
+<div class="signin-box">
+    <p class="link-pretitle">Or sign in with</p>
+    <ul class="list modal-list">
+        <li class="modal-item"><a href=""><svg class="modal-svg" width="20" height="20">
+            <use href="./images/sprite.svg#icon-Facebook"></use>
+        </svg></a></li>
+        <li class="modal-item"><a href=""><svg class="modal-svg" width="20" height="20">
+            <use href="./images/sprite.svg#icon-Google"></use>
+        </svg></a></li>
+        <li class="modal-item"><a href=""><svg class="modal-svg" width="20" height="20">
+            <use href="./images/sprite.svg#icon-Twitter"></use>
+        </svg></a></li>
+        <li class="modal-item"><a href=""><svg class="modal-svg" width="20" height="20">
+            <use href="./images/sprite.svg#icon-Linked-In"></use>
+        </svg></a></li>
+    </ul>
+</div>
+
+    </div>
+  </div>                  
+
+
+<script src="./js/modal.js"></script>
 </body>
 </html>
 
