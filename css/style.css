@@ -199,16 +199,20 @@ line-height: 1.5;
 }
 .hero-btn:before {
   position: absolute;
-  content: '';
-  display: inline-block;
-  
-  width: 84px;
-height: 84px;
-  background-image: url(../images/Ellipse-large.svg);
   right:56%;
+  content: '';
+  z-index: -1;
+
+  display: inline-block;
+  width: 84px;
+  height: 84px;
+
+  background-image: url(../images/Ellipse-large.svg);
+ 
  
 }
 .hero-btn:before {
+
   animation-name: pulse;
   animation-duration: 3000ms;
   animation-timing-function: ease-in-out;
