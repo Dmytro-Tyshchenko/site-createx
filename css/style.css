@@ -194,7 +194,6 @@ align-items: center;
 margin-bottom: 55px;
 border: none;
 background-color: transparent;
-
 font-size: 14px;
 line-height: 1.5;
 }
@@ -202,10 +201,9 @@ line-height: 1.5;
   position: absolute;
   content: '';
   display: inline-block;
-  /* z-index: 1; */
+  
   width: 84px;
 height: 84px;
-/* background-color: #03CEA4; */
   background-image: url(../images/Ellipse-large.svg);
   right:56%;
  
@@ -1377,6 +1375,12 @@ color: var(--primary-text-color);
 border: 1px solid  #D7DADD;
 background: var(--white-bgn-color);
 }
+.input-position::placeholder {
+  color: var(--gray-600);
+font-size: 14px;
+line-height: 1.5;
+}
+
 label[for="password"] + input {
   padding: 14px 16px;
 }
@@ -1385,13 +1389,45 @@ label[for="password"] + input {
   justify-content: space-between;
   margin-bottom: 24px;
 }
+
 .label-checkbox {
+  display: flex;
+  align-items: center;
+
   color: var(--primary-text-color);
 font-size: 14px;
 line-height: 1.5; 
 }
 .input-checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+.icon-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+
+  border: 1px solid #B3B7BC;
+  border-radius: 4px;
+}
+.input-checkbox:checked + .icon-checkbox{
+border-color: transparent;
+background-color: var(--accent-color);
+background-image: url(../images/checked.svg);a
+background-size: contain;
+background-origin: border-box;
+
+}
+
 .link-help {
   color: var(--accent-color);
 text-align: right;
@@ -1406,6 +1442,7 @@ border-radius: 4px;
 background-color: var(--accent-color);
 margin-bottom: 24px;
 
+cursor: pointer;
 color: var(--white-text-color);
 text-align: center;
 font-family: Lato;
